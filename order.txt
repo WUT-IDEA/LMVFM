@@ -1,0 +1,61 @@
+% orders for LMVFM
+
+path = './data/australian/30%/';
+y =[path, 'groundtruth_y.txt'];
+index =[path, 'index_y.txt'];
+
+% mean
+p =[path,'data_mean.txt'];
+calculate(y,p,index);
+
+% knn
+p =[path,'data_knn.txt'];
+calculate(y,p,index);
+
+% lmvfm
+p =[path,'data_lmvfm.txt'];
+calculate(y,p,index);
+
+% 其他组的实验结果
+path = './data/compare/australian/30%/';
+y =[path, 'missing_ground_truth_other']
+index = [path , 'missing_index_global_other.txt'];
+
+% em
+p =[path,  'data_em.txt'];
+calculate(y,p,index);
+
+% mice
+p =[path,'data_mice.txt'];
+calculate(y,p,index);
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%Jiangsu%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+path = './data/Jiangsu/30%/';
+y =[path, 'groundtruth_y.txt'];
+index =[path, 'index_y.txt'];
+
+% mean
+p =[path,'data_mean.txt'];
+calculate(y,p,index);
+
+% knn
+p =[path,'data_knn.txt'];
+calculate(y,p,index);
+
+% lmvfm
+p =[path,'data_lmvfm.txt'];
+calculate(y,p,index);
+
+% 其他组的实验结果
+
+path = './data/compare/Jiangsu/30%/';
+y =[path, 'missing_ground_truth_other'];
+index = [path , 'missing_index_global_other.txt'];
+
+% em
+p =[path,  'data_em.txt'];
+calculate(y,p,index);
+
+% mice
+p =[path,'data_mice.txt'];
+calculate(y,p,index);
